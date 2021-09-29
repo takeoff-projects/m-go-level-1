@@ -22,7 +22,6 @@ var Events []Event
 func createClient(ctx context.Context) *firestore.Client {
 	// Sets your Google Cloud Platform project ID.
 	projectID := "roi-takeoff-user69"
-	// !! ^^^^^^^^^^^^ !!!
 
 	client, err := firestore.NewClient(ctx, projectID)
 	if err != nil {
